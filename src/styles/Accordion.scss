@@ -1,0 +1,23 @@
+.Accordion,
+.Accordion-closed {
+  // padding: 2rem;
+  margin: 1rem;
+  position: relative;
+  width: 40rem;
+
+  // border: 1px red solid;
+
+  .chevron {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    z-index: 999;
+  }
+}
+
+.Accordion-closed .Accordion-child {
+  display: none;
+}

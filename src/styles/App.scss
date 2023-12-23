@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  .preview {
+    flex: 1;
+  }
+}
+
+.Form {
+  .accordion-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}

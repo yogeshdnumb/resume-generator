@@ -1,0 +1,36 @@
+.TextBox {
+  position: relative;
+  display: inline-block;
+
+  input {
+    padding: 0.3rem 0.3rem;
+    min-width: 100px;
+    // width: 400px;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid grey;
+  }
+
+  input:hover {
+    border: 1px solid black;
+  }
+
+  span {
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    top: 9px;
+    font-family: var(--ff-1);
+  }
+
+  input:focus + span,
+  input:valid + span {
+    top: -14px;
+    z-index: 1;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
